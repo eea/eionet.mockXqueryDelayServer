@@ -15,3 +15,14 @@ declare function obligations:httpget() {
 * Next we call the method that we created earlier
 
 e.g. obligations:httpget()
+
+
+### SSL key generation for demo alias
+keytool -genkeypair -alias demo -keyalg RSA -keysize 2048 -storetype PKCS12 -keystore demo.p12 -validity 3650
+
+### Build image and deploy to a docker repo 
+- inside app root directory run the following commands:
+
+$ mvn clean install 
+$ docker build -t eworxeea/mockxquerydelayserver:2020-27-10T1500 .
+$ docker push eworxeea/mockxquerydelayserver:2020-27-10T1500 

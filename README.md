@@ -1,8 +1,8 @@
-##Instructions to run application locally
+## Instructions to run application locally
 
 MockXqueryDelayServerApplication -> right click -> Run
 
-##Instructions to send request to mockXqueryDelayServer application from script
+## Instructions to send request to mockXqueryDelayServer application from script
 
 * We declare on the script a method that sends the request to mockXqueryDelayServer (provoking a delay that is determined from property waitingTime). 
   Following is an example: 

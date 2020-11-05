@@ -24,6 +24,7 @@ public class MockXQueryDelayServerController {
 
     @GetMapping("/test")
     public String test( HttpServletRequest request) throws InterruptedException {
+            logger.info("test connection");
             Thread.sleep(waitingTime);
         return "";
     }
